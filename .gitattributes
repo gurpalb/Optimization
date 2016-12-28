@@ -1,4 +1,3 @@
 $ cat .gitattributes
 special-vendored-path/* linguist-vendored
-*.py linguist-vendored=false
-*.bat linguist-vendored=false
+python.py linguist-vendored=false
