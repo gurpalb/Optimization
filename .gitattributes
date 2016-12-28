@@ -1,2 +1,2 @@
 $ cat .gitattributes
-*.python linguist-language=Excel
+*.pdf linguist-language=Excel
