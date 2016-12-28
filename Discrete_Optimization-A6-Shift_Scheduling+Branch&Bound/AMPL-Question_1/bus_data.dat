@@ -1,0 +1,35 @@
+# data file for the question 1
+
+param Nb_Requirements := 20;	
+	  # number of requirements specified below
+
+set SHIFTS := 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24;	# set of workshifts, indexed by start time
+set shift_type := 1 2 3;
+#set shift_type := normal short dual;
+set company := 1 2;
+
+
+param: From	To UBC SBC :=
+1	 	5	6	 3		   5
+2 		6   7    10        12
+3       7   8    12        20
+4       8   9    12        20
+5       9   10   10        15
+6       10  11   10        8
+7       11  12   15        6
+8       12  13   19        6
+9       13  14   18        6
+10		14  15   15		   8
+11		15  16   12		   12
+12  	16  17   10 	   15
+13      17  18   8         21
+14		18  19   6		   20
+15      19  20   5         12
+16      20  21   5		   6
+17      21  22   5		   4
+18		22  23   4		   3
+19		23  24   3 		   2
+20		24  25   2   	   2; 
+
+
+

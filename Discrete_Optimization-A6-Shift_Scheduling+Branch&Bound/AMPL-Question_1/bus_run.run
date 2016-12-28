@@ -1,0 +1,24 @@
+reset;		# clears AMPL memory, to allow repeated runs 
+			# within the same AMPL session
+model bus_model.mod;
+data  bus_data.dat;
+
+option display_1col 0;	# for compact display
+option display_round 2;	# output formatting (rounded to 2 decimal digits)
+
+# Next, solve the IP model using the CPlex MIP solver:
+option solver cplex;
+solve;
+
+
+
+display x;
+	# (Note: the LP shadow prices are meaningless when solving an IP)
+#
+#printf "Optimal integer solution:\n"  		> CC_staffing.out;  
+#display Agents_Starting_At, Total 			> CC_staffing.out;  
+#close CC_staffing.out;		# close and save the file right now
+	# (Note: the file will be overwritten next time AMPL writes to it)
+#printf "Output file CC_staffing.out closed.\n";  
+
+# include bus_run.run
