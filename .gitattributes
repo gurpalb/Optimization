@@ -1,2 +1,3 @@
 $ cat .gitattributes
-*.pdf linguist-language=Excel
+*.xls linguist-language=Excel
+*.xlsx linguist-language=Excel
