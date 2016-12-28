@@ -1,0 +1,252 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="SolverStudio.dll" version="00.09.01.00" publicKeyToken="1b128fa6bfbca314" language="neutral" processorArchitecture="msil" type="win32" />
+  <description xmlns="urn:schemas-microsoft-com:asm.v1">An Excel add-in for building and solving optimization models using modelling languages such as PuLP, AMPL, GAMS and others.</description>
+  <application />
+  <entryPoint>
+    <co.v1:customHostSpecified />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.CSharp" version="4.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Office.Tools.v4.0.Framework" version="10.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.VisualStudio.Tools.Applications.Runtime" version="10.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="System.Numerics" version="4.0.0.0" publicKeyToken="B77A5C561934E089" language="neutral" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="System.Xaml" version="4.0.0.0" publicKeyToken="B77A5C561934E089" language="neutral" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="IronPython.dll" size="1821184">
+      <assemblyIdentity name="IronPython" version="2.7.5.0" publicKeyToken="7F709C5B713576E1" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>BPhbkGgA137Jb7Q2/QKSrDIo488=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="IronPython.Modules.dll" size="747008">
+      <assemblyIdentity name="IronPython.Modules" version="2.7.5.0" publicKeyToken="7F709C5B713576E1" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>lGoIqOvmHzy5CFgfyOr6UFwPZEM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.Dynamic.dll" size="1044992">
+      <assemblyIdentity name="Microsoft.Dynamic" version="1.1.0.20" publicKeyToken="7F709C5B713576E1" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>9VLj/mSpMNaTcGORO1Ts9VG901o=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.Office.Tools.Common.v4.0.Utilities.dll" size="32664">
+      <assemblyIdentity name="Microsoft.Office.Tools.Common.v4.0.Utilities" version="10.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>CtnCtseaMyfROIGe0ENdGO6arHg=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.Scripting.dll" size="144384">
+      <assemblyIdentity name="Microsoft.Scripting" version="1.1.0.20" publicKeyToken="7F709C5B713576E1" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>ErD1AsUmZGPngStH+NcNOquuiPQ=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.Scripting.Metadata.dll" size="93184">
+      <assemblyIdentity name="Microsoft.Scripting.Metadata" version="1.1.0.20" publicKeyToken="7F709C5B713576E1" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>Dsv3nu1KP2b8BPZaifbyDp63BaQ=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ScintillaNET.dll" size="588288">
+      <assemblyIdentity name="ScintillaNET" version="2.6.0.0" publicKeyToken="948D6C9751444115" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>fCQY/vZJM1JgTV6DIaas7CfFjDE=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SolverStudio.dll" size="415232">
+      <assemblyIdentity name="SolverStudio" version="0.9.1.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>FjvYmA14gO6tGycMdl6MxHoF1As=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <vstav3:addIn xmlns:vstav3="urn:schemas-microsoft-com:vsta.v3">
+    <vstav3:entryPointsCollection>
+      <vstav3:entryPoints>
+        <vstav3:entryPoint class="SolverStudio.ThisAddIn">
+          <assemblyIdentity name="SolverStudio" version="0.9.1.0" language="neutral" processorArchitecture="msil" />
+        </vstav3:entryPoint>
+      </vstav3:entryPoints>
+    </vstav3:entryPointsCollection>
+    <vstav3:update enabled="false" />
+    <vstav3:application>
+      <vstov4:customizations xmlns:vstov4="urn:schemas-microsoft-com:vsto.v4">
+        <vstov4:customization>
+          <vstov4:appAddIn application="Excel" loadBehavior="3" keyName="SolverStudio">
+            <vstov4:friendlyName>SolverStudio</vstov4:friendlyName>
+            <vstov4:description>An Excel add-in for building and solving optimization models using modelling languages such as PuLP, AMPL, GAMS and others.</vstov4:description>
+            <vstov4.1:ribbonTypes xmlns:vstov4.1="urn:schemas-microsoft-com:vsto.v4.1">
+              <vstov4.1:ribbonType name="SolverStudio.SolverStudioRibbon, SolverStudio, Version=0.9.1.0, Culture=neutral, PublicKeyToken=null" />
+            </vstov4.1:ribbonTypes>
+          </vstov4:appAddIn>
+        </vstov4:customization>
+      </vstov4:customizations>
+    </vstav3:application>
+  </vstav3:addIn>
+<publisherIdentity name="CN=The University of Auckland, O=The University of Auckland, C=NZ" issuerKeyHash="9dc15a6b5ca3f129c87d48b56069d7a723cdeec9" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>T8RhjQoU+rhzKs3DgxkA4Th8i9Y=</DigestValue></Reference></SignedInfo><SignatureValue>SlsyKiaHIucqvzD31dVcrFcBQMxvCutp6CJh6UZIdtEy7FeHRS8UpydGjkoHEZTM8vAilx4Vl0HA3NpTSp760dkG+e8BXJ17ztkvoRs4iN0N77+l1GhM8ktNH1M6OQMlWnnyOzY93pNHgk+uGAnFhj5jH7oe4+DTBRoPHJ4GWMCLYvLhIOj87LUp+ER2Cd8SLpc7VYCVTXNF164llK/Aedsbu5MR/n6+9b4qDzQQNYO6kZm6OBiM0Z5It/fLSN1JcY3KK7y7xKqhgrYbuWcooYzXVWS97nPNAprYFz2hkB0O4ois8GamY9vgjWu19momMt1bYA1n30vE/N+7EgECsw==</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>q2JTAUFwqm4I+1pEm6rxDcPlHFYd8sYPkGhKpN5AjCJb0hUQRJvccFWINY2U3NbgBEyDv5431bv+ZMHUvlz8KUb6YHe343QUhQ/nFeSyRWzXijGwYOAWc4xucozY084h20gFokWACQJYpOnF28IXRHb//BmdhPXvD7/McI+W2igrvYCGE8WGs46TmDLP9eIjzNMkY88Woc1n3TbG2VaDWiZ9SmE0obSYeFmeSvzPADZx2bSvFER34AhMi5OBS23HTq+2SccRR7YsKslADBAX5NnB3Y5Kvr4mzyTcXyOw8ETV8uCGQo6WnB8k2k9arGGCIvVGlBCI9l7Yi/qmykZJXQ==</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="d68b7c38e1001983c3cd2a73b8fa140a8d61c44f" Description="" Url=""><as:assemblyIdentity name="SolverStudio.dll" version="00.09.01.00" publicKeyToken="1b128fa6bfbca314" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=The University of Auckland, O=The University of Auckland, C=NZ</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>g43glguSmQZdwa2WORvw+5lpV3c=</DigestValue></Reference></SignedInfo><SignatureValue>P7E/vNTxmWOrspIQktpx4+ZcpbVatzaYU/7QszMZzWBtIURCYtHEndP3gka3pQtdO5ssGmn1+6Pg6zZlNp0ylh5bCGa9HD4cqDRUl6dcXwGXObUnlzcf9bNbQANMcctNcJhPtmc3uRQWWmqzqmBNAQZxuad4xY3buMWc0zeKNzQYtTQ23yRfdcsprVrgD4Kd2uDpRLEX0/zul76knL99XG70Jbfosynd0iDrHkZ8Bfm40PcmYthQgCE++/VbnzrPVZr4kF1qdJLuiiN5OCo1DSRz3dhmGqw2BuUvVG1b749PMi/CnbzxAhlMt1vcKOKW+jImGWUHrQ0fl2b1kyUMCA==</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>q2JTAUFwqm4I+1pEm6rxDcPlHFYd8sYPkGhKpN5AjCJb0hUQRJvccFWINY2U3NbgBEyDv5431bv+ZMHUvlz8KUb6YHe343QUhQ/nFeSyRWzXijGwYOAWc4xucozY084h20gFokWACQJYpOnF28IXRHb//BmdhPXvD7/McI+W2igrvYCGE8WGs46TmDLP9eIjzNMkY88Woc1n3TbG2VaDWiZ9SmE0obSYeFmeSvzPADZx2bSvFER34AhMi5OBS23HTq+2SccRR7YsKslADBAX5NnB3Y5Kvr4mzyTcXyOw8ETV8uCGQo6WnB8k2k9arGGCIvVGlBCI9l7Yi/qmykZJXQ==</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIFrzCCA5egAwIBAgIUBh45DtegV2yTbTFwgRyyT2q0jzYwDQYJKoZIhvcNAQELBQAwTjELMAkGA1UEBhMCQk0xGTAXBgNVBAoTEFF1b1ZhZGlzIExpbWl0ZWQxJDAiBgNVBAMTG1F1b1ZhZGlzIENvZGUgU2lnbmluZyBDQSBHMTAeFw0xNTA0MjMyMDA4MjFaFw0xODA0MjMyMDA4MTJaMFcxCzAJBgNVBAYTAk5aMSMwIQYDVQQKExpUaGUgVW5pdmVyc2l0eSBvZiBBdWNrbGFuZDEjMCEGA1UEAxMaVGhlIFVuaXZlcnNpdHkgb2YgQXVja2xhbmQwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCrYlMBQXCqbgj7WkSbqvENw+UcVh3yxg+QaEqk3kCMIlvSFRBEm9xwVYg1jZTc1uAETIO/njfVu/5kwdS+XPwpRvpgd7fjdBSFD+cV5LJFbNeKMbBg4BZzjG5yjNjTziHbSAWiRYAJAlik6cXbwhdEdv/8GZ2E9e8Pv8xwj5baKCu9gIYTxYazjpOYMs/14iPM0yRjzxahzWfdNsbZVoNaJn1KYTShtJh4WZ5K/M8ANnHZtK8URHfgCEyLk4FLbcdOr7ZJxxFHtiwqyUAMEBfk2cHdjkq+vibPJNxfI7DwRNXy4IZCjpacHyTaT1qsYYIi9UaUEIj2XtiL+qbKRkldAgMBAAGjggF6MIIBdjB0BggrBgEFBQcBAQRoMGYwKgYIKwYBBQUHMAGGHmh0dHA6Ly9vY3NwLnF1b3ZhZGlzZ2xvYmFsLmNvbTA4BggrBgEFBQcwAoYsaHR0cDovL3RydXN0LnF1b3ZhZGlzZ2xvYmFsLmNvbS9xdmNzY2FnMS5jcnQwXAYDVR0gBFUwUzBHBg0rBgEEAb5YAAKBSAEBMDYwNAYIKwYBBQUHAgEWKGh0dHA6Ly93d3cucXVvdmFkaXNnbG9iYWwuY29tL3JlcG9zaXRvcnkwCAYGZ4EMAQIDMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEFBQcDAzAfBgNVHSMEGDAWgBSdwVprXKPxKch9SLVgadenI83uyTA7BgNVHR8ENDAyMDCgLqAshipodHRwOi8vY3JsLnF1b3ZhZGlzZ2xvYmFsLmNvbS9xdmNzY2FnMS5jcmwwHQYDVR0OBBYEFG04syouFOWQzsyFM4DdXFdeAU9MMA0GCSqGSIb3DQEBCwUAA4ICAQAjKlCz6ntCbkXSHFxjQwzuhvP+Zar9na5wFdAd6/d4Iqc0GBq/cTfW0S6zwzQ+oRf7w3nuUO/UWthm+MG/h9a71otp+DlZrjnfydmAfsW67zan0l59lUOZLa8/kMIvbAav8dURqNSbXVooHBBBdjqA32jRn2bjWaVcINCjDzl5K9rOJKt5ets0pDfJZ3ohW7RUiIOZrIQd+yro+BrNGUFcgV1gJ0MjwKQ/C3PDc87z2N+LDmLmrz5BDXJZyhziuv+j4Q75UezRkF15iD8MdOMhjtk8H9tDH/7JHR2Qsmanr7Jg7v/1K4PB7NJ9Z7v0roJalurK1nIcPzDsCF0X6HWuRbUMznEmjQ0Eb6V96zyLnGY+aLVAnePYPZ+et4UOn2AZ6aBBURIk6ltsO6pUQoqUlS04bifEN+dakj6dIK8GGIpyS/vtNM6ZqZ5HMNvlm7KCEgfoQyadPdo0Up9rw2Eml/tzIlhoI+P4Pk6rpwnx6l70VVhvrhmhKr9bsd8QOLYCzPwoG5ASfv0mDXMU1pwXFQtLL9EjSjLDZ8ldLsV+9yScoOWo+VDVADOCO+Y06DLR7y2MWkgyhqo0v0iqb0v6TAIuwCw39o9Kj/onrv0NIbD0DH5bhVkTb1SLgQq62EXT1qON3mYMZoU+8/oPqZSje+pMhQQCOUKTMtex6sn2zg==</X509Certificate><X509Certificate>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</X509Certificate></X509Data></KeyInfo><Object><as:Timestamp>MIIL0wYJKoZIhvcNAQcCoIILxDCCC8ACAQExCzAJBgUrDgMCGgUAMIIBEwYJKoZI
+hvcNAQcBoIIBBASCAQA/sT+81PGZY6uykhCS2nHj5lyltVq3NphT/tCzMxnNYG0h
+REJi0cSd0/eCRrelC107mywaafX7o+DrNmU2nTKWHlsIZr0cPhyoNFSXp1xfAZc5
+tSeXNx/1s1tAA0xxy01wmE+2Zze5FBZaarOqYE0BBnG5p3jFjdu4xZzTN4o3NBi1
+NDbfJF91yymtWuAPgp3a4OlEsRfT/O6XvqScv31cbvQlt+izKd3SIOseRnwF+bjQ
+9yZi2FCAIT779VufOs9VmviQXWp0ku6KI3k4KjUNJHPd2GYarDYG5S9UbVvvj08y
+L8KdvPECGUy3W9wo4pb6MiYZZQetDR+XZvWTJQwIoIIImTCCA+4wggNXoAMCAQIC
+EH6T6/t8xk5Z6kuad9QG/DswDQYJKoZIhvcNAQEFBQAwgYsxCzAJBgNVBAYTAlpB
+MRUwEwYDVQQIEwxXZXN0ZXJuIENhcGUxFDASBgNVBAcTC0R1cmJhbnZpbGxlMQ8w
+DQYDVQQKEwZUaGF3dGUxHTAbBgNVBAsTFFRoYXd0ZSBDZXJ0aWZpY2F0aW9uMR8w
+HQYDVQQDExZUaGF3dGUgVGltZXN0YW1waW5nIENBMB4XDTEyMTIyMTAwMDAwMFoX
+DTIwMTIzMDIzNTk1OVowXjELMAkGA1UEBhMCVVMxHTAbBgNVBAoTFFN5bWFudGVj
+IENvcnBvcmF0aW9uMTAwLgYDVQQDEydTeW1hbnRlYyBUaW1lIFN0YW1waW5nIFNl
+cnZpY2VzIENBIC0gRzIwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCx
+rLNJVEuXHBIK2CV5kSJXKm/cuCbEQ3Nrwr8uUFr7FMJ2jkMBJUO0oeJF9Oi3e8N0
+zCLXtJQAAvdN7b+0t0Qka81fRTvRRM5DEnMXgotptCvLmR6schsmTXEfsTHd+1Fh
+AlOmqvVJLAV4RaUvic7nmef+jOJXPz3GktxK+Hsz5HkK+/B1iEGc/8UDUZmq12yf
+k2mHZSmDhcJgFMTIyTsU2sCB8B8NdN6SIqvK9/t0fCfm90obf6fDni2uiuqm5qon
+Fn1h95hxEbziUKFL5V365Q6nLJ+qZSDT2JboyHylTkhE/xniRAeSC9dohIBdanhk
+Rc1gRn5UwRN8xXnxycFxAgMBAAGjgfowgfcwHQYDVR0OBBYEFF+a9W5czMx0mtTd
+fe8/2+xMgC7dMDIGCCsGAQUFBwEBBCYwJDAiBggrBgEFBQcwAYYWaHR0cDovL29j
+c3AudGhhd3RlLmNvbTASBgNVHRMBAf8ECDAGAQH/AgEAMD8GA1UdHwQ4MDYwNKAy
+oDCGLmh0dHA6Ly9jcmwudGhhd3RlLmNvbS9UaGF3dGVUaW1lc3RhbXBpbmdDQS5j
+cmwwEwYDVR0lBAwwCgYIKwYBBQUHAwgwDgYDVR0PAQH/BAQDAgEGMCgGA1UdEQQh
+MB+kHTAbMRkwFwYDVQQDExBUaW1lU3RhbXAtMjA0OC0xMA0GCSqGSIb3DQEBBQUA
+A4GBAAMJm495739ZMKrvaLX64wkdu0+CBl03X6ZSnxaN6hySCURu9W3rWHww6Plp
+jSNzCxJvR6muORH4KrGbsBrDjutZlgCtzgxNstAxpghcKnr84nodV0yoZRjpeUBi
+JZZux8c3aoMhCI5B6t3ZVz8dd0mHKhYGXqY4aiISo1EZg362MIIEozCCA4ugAwIB
+AgIQDs/0OMj+vzVuBNhqmBsaUDANBgkqhkiG9w0BAQUFADBeMQswCQYDVQQGEwJV
+UzEdMBsGA1UEChMUU3ltYW50ZWMgQ29ycG9yYXRpb24xMDAuBgNVBAMTJ1N5bWFu
+dGVjIFRpbWUgU3RhbXBpbmcgU2VydmljZXMgQ0EgLSBHMjAeFw0xMjEwMTgwMDAw
+MDBaFw0yMDEyMjkyMzU5NTlaMGIxCzAJBgNVBAYTAlVTMR0wGwYDVQQKExRTeW1h
+bnRlYyBDb3Jwb3JhdGlvbjE0MDIGA1UEAxMrU3ltYW50ZWMgVGltZSBTdGFtcGlu
+ZyBTZXJ2aWNlcyBTaWduZXIgLSBHNDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCC
+AQoCggEBAKJjCzlEuLsjp0RJuw7/ofBhClOTsJjbrSwPSsVu/4Y8U1UPFc4EPyv9
+qZaW2b5heQtbyUyGduXgQ0sile7CK0PBn9hotI5AT+6FOLkRxSPyZFjwFTJvTleh
+roikAtcqHs1L4d1j1ReJMluwXplaqJ0oUA4X7pbbYTtFUR3PElYLkkf8q672Zj1H
+rHBy55LnX80QucSDZJQZvSWA4ejSIqXQugJ6oXeTW2XD7hd0vEGGKtwITIySjJEt
+nndEH2jWqHR32w5bMotWizO92WPISZ06xcXqMwvS8aMb9Iu+2bNXizveBKd6IrIk
+ri7HcMW+ToMmCPsLvalPmQjhEChyqs0CAwEAAaOCAVcwggFTMAwGA1UdEwEB/wQC
+MAAwFgYDVR0lAQH/BAwwCgYIKwYBBQUHAwgwDgYDVR0PAQH/BAQDAgeAMHMGCCsG
+AQUFBwEBBGcwZTAqBggrBgEFBQcwAYYeaHR0cDovL3RzLW9jc3Aud3Muc3ltYW50
+ZWMuY29tMDcGCCsGAQUFBzAChitodHRwOi8vdHMtYWlhLndzLnN5bWFudGVjLmNv
+bS90c3MtY2EtZzIuY2VyMDwGA1UdHwQ1MDMwMaAvoC2GK2h0dHA6Ly90cy1jcmwu
+d3Muc3ltYW50ZWMuY29tL3Rzcy1jYS1nMi5jcmwwKAYDVR0RBCEwH6QdMBsxGTAX
+BgNVBAMTEFRpbWVTdGFtcC0yMDQ4LTIwHQYDVR0OBBYEFEbGaaMOShQe1UzaUmMX
+P142vA3mMB8GA1UdIwQYMBaAFF+a9W5czMx0mtTdfe8/2+xMgC7dMA0GCSqGSIb3
+DQEBBQUAA4IBAQB4O7SRKgBM8I9iMDd4o4QnB28Yst4l3KDUlAOqhk4ln5pAAxzd
+zuN5yyFoBtq2MrRtv/QsJmMz5ElkbQ3mw2cO9wWkNWx8iRbG6bLfsundIMZxD82V
+dNy2XN69Nx9DeOZ4tc0oBCCjqvFLxIgpkQ6A0RH83Vx2bk9eDkVGQW4NsOo4mrE6
+2glxEPwcebSAe6xp9P2ctgwWK/F/Wwk9m1viFsoTgW0ALjgNqCmPLOGy9FqpAa8V
+nCwvSRvbIrvD/niUUcOGsYKIXfA9tFGheTMrLnu53CAJE3Hrahlbz+ilMFcsiUk/
+uc9/yb8+ImhjU5q9aXSsxR08f5Lgw7wc2AR1MYIB+DCCAfQCAQEwcjBeMQswCQYD
+VQQGEwJVUzEdMBsGA1UEChMUU3ltYW50ZWMgQ29ycG9yYXRpb24xMDAuBgNVBAMT
+J1N5bWFudGVjIFRpbWUgU3RhbXBpbmcgU2VydmljZXMgQ0EgLSBHMgIQDs/0OMj+
+vzVuBNhqmBsaUDAJBgUrDgMCGgUAoF0wGAYJKoZIhvcNAQkDMQsGCSqGSIb3DQEH
+ATAcBgkqhkiG9w0BCQUxDxcNMTUwODEzMDExNjE4WjAjBgkqhkiG9w0BCQQxFgQU
+YFstW1QDYDezNPzbozBBkDAQiYUwDQYJKoZIhvcNAQEBBQAEggEALR/JkWu7HnsO
+m6x8nFJj3FBu2PCgt0UhGXINp+ybtKfIV3lOU1mmiF8j+Pb5sOgf3tMozMhDT3f7
+5OVYqcYC1rIGhSXX46tEjPLQ/OIWuleHZtc2AId3ZusZ1NF8HqRgMIrkY0W2OJt5
+4MWMLsHI3K7BSQIPpVV1OZdPCLs1t2mAyU3ZmfHIDN2dU/8ZIilYa9b+NUUpyp5h
+jK7joujclqNRQpZnK1VyvN/jma7cvdU4vfmu+vbwygEYEPNi2vkvZ7PZJ1Est7zU
+0gThBARInLB9+0KlI+CKuQEPUZFYVJc8H20U2TkNOeP7ZbMQ2bW675JzL5XBH81E
+vTBYpENLzQ==
+</as:Timestamp></Object></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

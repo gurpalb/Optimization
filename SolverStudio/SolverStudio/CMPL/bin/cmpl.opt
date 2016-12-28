@@ -1,0 +1,4 @@
+CbcPath = ../../Solvers/32bit/
+GlpkPath =  ../../GLPK/
+ScipFileName = 
+CplexFileName =

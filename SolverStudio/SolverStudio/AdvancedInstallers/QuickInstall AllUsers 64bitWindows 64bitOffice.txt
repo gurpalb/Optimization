@@ -1,0 +1,7 @@
+SolverStudio
+============
+
+If you are installing SolverStudio for all user on a 64 bit Windows with 64 bit Office, then you can use the file:
+
+QuickInstall AllUsers 32bitWindows.bat
+

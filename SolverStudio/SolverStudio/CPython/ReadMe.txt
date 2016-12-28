@@ -1,0 +1,3 @@
+To run models marked as using the 'external Python' language, SolverStudio will use any instance of "python.exe" it can find on the system PATH. If none is found, then it will look inside this .../SolverStudio/CPython directory. This allows a copy of CPython to be 'installed' in SolverStudio by simply copying the contents of, for example, a Python27 directory into .../SolverStudio/CPython/, in which case SolverStudio will run ".../SolverStudio/CPython/python.exe".
+
+Note: Previous versions of SolverStudio (prior to Feb 2013) included a full Python installation in this folder.

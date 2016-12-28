@@ -1,0 +1,1 @@
+{'minco': ['FilMINT', 'MINLP', 'KNITRO'], 'go': ['ASA', 'PGAPack', 'PSwarm'], 'cp': ['KNITRO', 'PATH', 'filterMPEC'], 'bco': ['L-BFGS-B'], 'lp': ['XpressMP', 'MOSEK', 'Gurobi', 'CPLEX', 'OOQP'], 'nco': ['Ipopt', 'MOSEK', 'CONOPT', 'KNITRO', 'LANCELOT', 'LOQO', 'MINOS', 'SNOPT', 'filter'], 'milp': ['Cbc', 'MINTO', 'XpressMP', 'Gurobi', 'CPLEX']}
