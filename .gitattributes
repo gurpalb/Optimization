@@ -1,2 +1,3 @@
 $ cat .gitattributes
-*.bat linguist-language=AMPL
+special-vendored-path/* linguist-vendored
+*.bat linguist-vendored=false
