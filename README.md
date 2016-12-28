@@ -1,7 +1,7 @@
 # Optimization
 Continuous and Discrete Optimization using Excel and AMPL. 
 
-Files:
+Folders:
 
     1. Linear Programming
     2. Sensitivity Analysis
