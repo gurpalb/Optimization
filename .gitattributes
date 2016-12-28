@@ -1,3 +1,7 @@
 $ cat .gitattributes
 *.xls linguist-language=Excel
 *.xlsx linguist-language=Excel
+*.py linguist-language=Excel
+*.txt linguist-language=Excel
+*.cfg linguist-language=Excel
+*.md linguist-language=Excel
