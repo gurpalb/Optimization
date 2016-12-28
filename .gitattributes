@@ -1,2 +1,2 @@
 $ cat .gitattributes
-*.xlsx linguist-language=R
+*.xlsx linguist-language=Excel
